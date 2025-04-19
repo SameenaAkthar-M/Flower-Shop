@@ -1,8 +1,6 @@
-import React,{useContext, useRef,useEffect,useState} from 'react'
+import React,{useContext} from 'react'
 import './explore.css'
 import { topseller } from '../assets/assets'
-import { useGSAP } from '@gsap/react'
-import gsap from 'gsap'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';

@@ -1,6 +1,5 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, {useRef} from "react";
 import "./home.css";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Explore from "../components/Explore";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -8,13 +7,11 @@ import { header } from "../assets/assets";
 import BirthdayComp from "../components/BirthdayComp";
 import AnnivComp from "../components/AnnivComp";
 import WeddingComp from "../components/WeddingComp";
-import { useNavigate } from "react-router-dom";
 import PageTransition from "../components/PageTransition";
 
 
 const Home = () => {
   const homeRef = useRef();
-  const exploreRef = useRef();
 
   useGSAP(() => {
     const tl = gsap.timeline();
